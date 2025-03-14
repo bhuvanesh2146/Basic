@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:#FFFFB380;
+        }
+
+        header {
+            background-color: #3bb0ce;
+            color: #FFF4FFD5;
+            text-align: center;
+            padding: 2rem 0;
+            position: relative; /* Add this */
+        }
+
+        .header-content h1 {
+            font-size: 2.5rem;
+        }
+
+        /* Add styles for the round profile picture */
+        .profile-picture {
+            width: 100px; /* Adjust the size as needed */
+            height: 100px;
+            border-radius: 75%; /* Create a circular shape */
+            object-fit: cover; /* To ensure the image fills the circular area */
+            position: absolute; /* Add this */
+            top: 75px; /* Adjust top position as needed */
+            left: 75px; /* Adjust left position as needed */
+        }
+
+        nav {
+            background-color: #686;
+            color: #fff;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .section-content {
+            background-color: #fff;
+            padding: 2rem;
+            margin: 1rem;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: justify;
+        }
+
+        .download-button {
+            background-color: #333;
+            color: #FFFF808A;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 10px;
+            align-self: center;
+        }
+
+        .download-button:hover {
+            background-color: #666;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #f7f7f7;
+            color: ##6aff8d;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <!-- Add your profile picture here -->
+            <img src="content://com.android.providers.media.documents/document/image%3A1000090729"Your Profile Picture" class="profile-picture">
+            <h1>BHUVANESH M</h1>
+            <p>Bsc Computer Science-Government Arts College, Nandanam, Chennai-600035</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#Courses">courses</a></li>
+            <li><a href="#Hobbies">Hobbies</a></li>
+            <li><a href="#resume">Resume</a></li>
+            
+           
+        </ul>
+    </nav>
+
+    <section id="about">
+        <div class="section-content">
+            <h2>ABOUT ME</h2>
+            <p> To work in an environment which encourages me to succeed and grow professionally where I can utilise my skills and knowledge appropriately  I'm also committed to helping others learn more about the importance of Excel sheet and how to work in your working place.
+    <a href="https://techtrainer20.github.io/git_con2/" traget="_target"> EXCEL SHEET AND PROFFESSIONAL PHOTO EDITOR</a> landscape. 
+          I'm also committed to helping others learn more about the importance of Excel sheetand how to work in your working place..</p>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="section-content">
+            <h2>Education</h2>
+            <p> >B.Sc Computer Science </p>
+         </div>
+    </section>
+
+    <section id="skills">
+        <div class="section-content">
+            <h2>Skills</h2>
+            <ul>
+                <li> >Python</li>
+                <li> >java</li>
+                <li> >Data structure </li>
+                <li> >C++</li>
+                <li> >Html</li>
+                <li> >Css</li>
+                
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="section-content">
+            <h2>Projects</h2>
+            <ul>
+                <li><a href="#">Digital Photfolio</a></li>
+                <li><a href="#">Cloud Security IBM</a></li>
+                <li><a href="#">IBM chetbot</a></li>
+                <li><a href="#">Html projects </a></li> 
+                <!-- Add more project links here -->
+            </ul>
+        </div>
+    </section>
+
+    <section id="Courses">
+        <div class="section-content">
+            <h2>Courses</h2>
+            <ul>
+                <li><a href="#">OBject Oriented programming using in Python-"Infoys"</a></li>
+                <li><a href="#">MongoDB Aggregation in Python-"MongoDB"</a></li>
+                <!-- Add more project links here -->
+            </ul>
+        </div>
+    </section>
+
+    <section id="Hobbies">
+        <div class="section-content">
+            <h2>Hobbies</h2>
+            <u1>
+                <li> >LISTENING SONGS</li>
+                <li> >CODING</li>
+                <li> >TRAVALLING</li>
+                <li> >PHOTO SHOOT</li>
+        </div>
+    </section>
+
+    <section id="resume">
+    
+        <div class="section-content">
+            <center>
+            <h2>Resume</h2>
+            <a href="https://drive.google.com/file/d/1pbPusqTcGFQKjaFIaSx87rEJEn2Xbmvt/view?usp=drivesdk"download-button">Download Resume</a>
+        </center>
+        </div>
+        
+    </section>
+
+    <footer>
+        <p>&copy; BHUVANESH M </p>
+    </foot
+    <script>
+        // Smooth scrolling to section when clicking on navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
